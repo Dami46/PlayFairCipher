@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1080.0" styleClass="background" stylesheets="@css/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="680.0" prefWidth="1080.0" styleClass="backgroundImage" stylesheets="@css/Main.css" />
+      <Button fx:id="encryptButton" layoutX="84.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleEncryptionClick" prefHeight="250.0" prefWidth="250.0" stylesheets="@css/Main.css" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="decryptButton" contentDisplay="TOP" layoutX="751.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleDecryptionClick" prefHeight="250.0" prefWidth="250.0" stylesheets="@css/Main.css" textAlignment="CENTER">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Button>
+      <Button fx:id="aboutButton" contentDisplay="BOTTOM" layoutX="84.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleAboutClick" prefHeight="250.0" prefWidth="250.0" stylesheets="@css/Main.css" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="751.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleExitClick" prefHeight="250.0" prefWidth="250.0" stylesheets="@css/Main.css" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Text disable="true" fill="WHITE" layoutX="163.0" layoutY="567.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About" wrappingWidth="91.63920593261719">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text disable="true" fill="WHITE" layoutX="796.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Decryption" wrappingWidth="160.4694061279297">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text disable="true" fill="WHITE" layoutX="129.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Encryption" wrappingWidth="160.4694061279297">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text disable="true" fill="WHITE" layoutX="851.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exit" wrappingWidth="51.79008483886719">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <ImageView disable="true" fitHeight="115.0" fitWidth="150.0" layoutX="152.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@css/info@3x.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="123.0" fitWidth="126.0" layoutX="815.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@css/netclipart.com-exit-clipart-1505164.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="134.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@css/lock-icon-11.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="802.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@css/hiclipart.com.png" />
+         </image>
+      </ImageView>
+      <Text disable="true" fill="WHITE" layoutX="387.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Playfair Cypher" textAlignment="CENTER" wrappingWidth="305.37510681152344">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
